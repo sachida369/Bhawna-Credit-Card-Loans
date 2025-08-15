@@ -98,64 +98,66 @@
                 </div>
                 
                 <!-- Lead Capture Form -->
-                <div class="bg-white rounded-2xl shadow-2xl p-8">
-                    <div class="text-center mb-6">
-                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Check Your Loan Eligibility</h3>
-                        <p class="text-gray-600">Get instant pre-approval from multiple banks</p>
-                    </div>
-                    
-                    <form id="leadForm" class="space-y-4">
-                        <div>
-                            <label class="block text-sm font-medium text-gray-700 mb-2">PAN Number</label>
-                            <input type="text" id="panNumber" placeholder="ABCDE1234F" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500" maxlength="10">
-                            <div class="error-message text-red-600 text-sm mt-1 hidden"></div>
-                        </div>
+<div class="bg-white rounded-2xl shadow-2xl p-8">
+    <div class="text-center mb-6">
+        <h3 class="text-2xl font-bold text-black mb-2">Check Your Loan Eligibility</h3>
+        <p class="text-black">Get instant pre-approval from multiple banks</p>
+    </div>
+    
+    <form id="leadForm" class="space-y-4">
+        <div>
+            <label class="block text-sm font-medium text-black mb-2">PAN Number</label>
+            <input type="text" id="panNumber" placeholder="ABCDE1234F" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-black" maxlength="10">
+            <div class="error-message text-red-600 text-sm mt-1 hidden"></div>
+        </div>
 
-                        <div>
-                            <label class="block text-sm font-medium text-gray-700 mb-2">Mobile Number</label>
-                            <input type="tel" id="mobileNumber" placeholder="9876543210" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500" maxlength="10">
-                            <div class="error-message text-red-600 text-sm mt-1 hidden"></div>
-                        </div>
+        <div>
+            <label class="block text-sm font-medium text-black mb-2">Mobile Number</label>
+            <input type="tel" id="mobileNumber" placeholder="9876543210" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-black" maxlength="10">
+            <div class="error-message text-red-600 text-sm mt-1 hidden"></div>
+        </div>
 
-                        <div>
-                            <label class="block text-sm font-medium text-black-900 mb-2">Monthly Income</label>
-                            <select id="monthlyIncome" class="w-full px-3 py-2 border border-black-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
-                                <option value="">Select Income Range</option>
-                                <option value="25000">₹25,000 - ₹50,000</option>
-                                <option value="50000">₹50,000 - ₹1,00,000</option>
-                                <option value="100000">₹1,00,000 - ₹2,00,000</option>
-                                <option value="200000">₹2,00,000+</option>
-                            </select>
-                            <div class="error-message text-red-600 text-sm mt-1 hidden"></div>
-                        </div>
+        <div>
+            <label class="block text-sm font-medium text-black mb-2">Monthly Income</label>
+            <select id="monthlyIncome" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-black">
+                <option value="">Select Income Range</option>
+                <option value="25000">₹25,000 - ₹50,000</option>
+                <option value="50000">₹50,000 - ₹1,00,000</option>
+                <option value="100000">₹1,00,000 - ₹2,00,000</option>
+                <option value="200000">₹2,00,000+</option>
+            </select>
+            <div class="error-message text-red-600 text-sm mt-1 hidden"></div>
+        </div>
 
-                        <div>
-                            <label class="block text-sm font-medium text-black-900 mb-2">Loan Type</label>
-                            <select id="loanType" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
-                                <option value="">Select Loan Type</option>
-                                <option value="personal">Personal Loan</option>
-                                <option value="home">Home Loan</option>
-                                <option value="car">Car Loan</option>
-                                <option value="business">Business Loan</option>
-                                <option value="creditcard">Credit Card</option>
-                            </select>
-                            <div class="error-message text-red-600 text-sm mt-1 hidden"></div>
-                        </div>
+        <div>
+            <label class="block text-sm font-medium text-black mb-2">Loan Type</label>
+            <select id="loanType" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-black">
+                <option value="">Select Loan Type</option>
+                <option value="personal">Personal Loan</option>
+                <option value="home">Home Loan</option>
+                <option value="car">Car Loan</option>
+                <option value="business">Business Loan</option>
+                <option value="creditcard">Credit Card</option>
+            </select>
+            <div class="error-message text-red-600 text-sm mt-1 hidden"></div>
+        </div>
 
-                        <div class="flex items-start space-x-2">
-                            <input type="checkbox" id="consent" class="mt-1">
-                            <label for="consent" class="text-sm text-black-00">
-                                I agree to share my information with banks and authorize them to contact me for loan offers.
-                                I have read and accept the terms & conditions.
-                            </label>
-                        </div>
-                        <div class="error-message text-red-600 text-sm mt-1 hidden" id="consentError"></div>
+        <div class="flex items-start space-x-2">
+            <input type="checkbox" id="consent" class="mt-1">
+            <label for="consent" class="text-sm text-black">
+                I agree to share my information with banks and authorize them to contact me for loan offers.
+                I have read and accept the terms & conditions.
+            </label>
+        </div>
+        <div class="error-message text-red-600 text-sm mt-1 hidden" id="consentError"></div>
 
-                        <button type="submit" class="w-full bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-blue-700 transition-colors duration-200 flex items-center justify-center">
-                            <span>Check Eligibility</span>
-                            <i class="fas fa-arrow-right ml-2"></i>
-                        </button>
-                    </form>
+        <button type="submit" class="w-full bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-blue-700 transition-colors duration-200 flex items-center justify-center">
+            <span>Check Eligibility</span>
+            <i class="fas fa-arrow-right ml-2"></i>
+        </button>
+    </form>
+</div>
+
                     
                     <!-- OTP Verification Form (Hidden initially) -->
                     <div id="otpForm" class="space-y-6 hidden">
