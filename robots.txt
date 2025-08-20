@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://smartloanadvisor.shop/sitemap.xml
+Host: https://smartloanadvisor.shop
