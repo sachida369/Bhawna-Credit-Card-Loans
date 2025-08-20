@@ -1,558 +1,87 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bhawna Credit Card & Loans DSA Partner</title>
-    <meta name="description" content="Get instant loan approval from India's top 10 banks. Compare rates, check eligibility, and get pre-approved loans in minutes with zero processing fees.">
-    
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body class="font-inter bg-black-50">
-    <!-- Header -->
-    <header class="bg-white shadow-sm border-b">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-16">
-                <div class="flex items-center space-x-3">
-                    <div class="w-12 h-12 rounded-full overflow-hidden bg-gradient-to-br from-blue-600 to-blue-700 p-0.5 shadow-lg">
-                        <div class="w-full h-full rounded-full overflow-hidden bg-white">
-                            <img src="assets/bhawna-portrait.jpg" alt="Bhawna - DSA Partner" class="w-full h-full object-cover object-center profile-image">
-                        </div>
-                    </div>
-                    <div>
-                        <h1 class="text-base font-bold text-gray-900">Bhawna Credit Card & Loans</h1>
-                        <p class="text-sm text-blue-600 font-medium">Authorized DSA Partner</p>
-                    </div>
-                </div>
-                <div class="hidden md:flex items-center space-x-4">
-                    <span class="text-sm text-gray-600">Quick Chat:</span>
-                    <a href="https://wa.me/918595469797" target="_blank" class="text-green-600 font-medium hover:underline">
-                        <i class="fab fa-whatsapp mr-1"></i>
-                        +91 859-546-9797
-                    </a>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <!-- Hero Section -->
-    <section class="bg-gradient-to-r from-blue-600 to-blue-700 text-white py-16 relative overflow-hidden">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                <div class="relative z-10">
-                    <div class="inline-flex items-center bg-white/10 backdrop-blur rounded-full px-3 py-1 text-sm mb-4">
-                        <i class="fas fa-shield-alt mr-2"></i>
-                        RBI Registered DSA Partner
-                    </div>
-                    <h1 class="text-4xl md:text-5xl font-bold mb-4">
-                        Get Instant Loan Approval from
-                        <span class="text-yellow-400"> Top 10 Banks</span>
-                    </h1>
-                    <p class="text-xl mb-6 text-blue-100">
-                        Compare rates, check eligibility, and get pre-approved loans in minutes. 
-                        Zero processing fees for DSA customers.
-                    </p>
-                    <div class="flex flex-wrap gap-4 mb-8">
-                        <div class="flex items-center">
-                            <i class="fas fa-check-circle mr-2 text-green-400"></i>
-                            <span>Instant Approval</span>
-                        </div>
-                        <div class="flex items-center">
-                            <i class="fas fa-check-circle mr-2 text-green-400"></i>
-                            <span>Best Interest Rates</span>
-                        </div>
-                        <div class="flex items-center">
-                            <i class="fas fa-check-circle mr-2 text-green-400"></i>
-                            <span>Zero Processing Fee</span>
-                        </div>
-                    </div>
-                    
-                    <!-- Professional Brand Ambassador -->
-                    <div class="bg-white/10 backdrop-blur rounded-2xl p-6 mb-8">
-                        <div class="flex items-center space-x-4">
-                            <div class="w-16 h-16 rounded-full overflow-hidden bg-white p-1 shadow-lg">
-                                <img src="assets/bhawna-portrait.jpg" alt="Bhawna - Your Trusted DSA Partner" class="w-full h-full object-cover rounded-full profile-image">
-                            </div>
-                            <div class="flex-1">
-                                <h4 class="font-semibold text-white text-lg">Bhawna Sharma</h4>
-                                <p class="text-blue-200 text-sm">Certified DSA Partner | 5+ Years Experience</p>
-                                <p class="text-blue-100 text-sm mt-1">"Helping 1000+ customers get best loan deals"</p>
-                            </div>
-                            <div>
-                                <a href="https://wa.me/918595469797" target="_blank" class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-full font-medium transition-colors flex items-center">
-                                    <i class="fab fa-whatsapp mr-2"></i>
-                                    Quick Chat
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Lead Capture Form -->
-<div class="bg-white rounded-2xl shadow-2xl p-8">
-    <div class="text-center mb-6">
-        <h3 class="text-2xl font-bold text-black mb-2">Check Your Loan Eligibility</h3>
-        <p class="text-black">Get instant pre-approval from multiple banks</p>
-    </div>
-    
-    <form id="leadForm" class="space-y-4">
-        <div>
-            <label class="block text-sm font-medium text-black mb-2">PAN Number</label>
-            <input type="text" id="panNumber" placeholder="ABCDE1234F" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-black" maxlength="10">
-            <div class="error-message text-red-600 text-sm mt-1 hidden"></div>
-        </div>
-
-        <div>
-            <label class="block text-sm font-medium text-black mb-2">Mobile Number</label>
-            <input type="tel" id="mobileNumber" placeholder="9876543210" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-black" maxlength="10">
-            <div class="error-message text-red-600 text-sm mt-1 hidden"></div>
-        </div>
-
-        <div>
-            <label class="block text-sm font-medium text-black mb-2">Monthly Income</label>
-            <select id="monthlyIncome" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-black">
-                <option value="">Select Income Range</option>
-                <option value="25000">₹25,000 - ₹50,000</option>
-                <option value="50000">₹50,000 - ₹1,00,000</option>
-                <option value="100000">₹1,00,000 - ₹2,00,000</option>
-                <option value="200000">₹2,00,000+</option>
-            </select>
-            <div class="error-message text-red-600 text-sm mt-1 hidden"></div>
-        </div>
-
-        <div>
-            <label class="block text-sm font-medium text-black mb-2">Loan Type</label>
-            <select id="loanType" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-black">
-                <option value="">Select Loan Type</option>
-                <option value="personal">Personal Loan</option>
-                <option value="home">Home Loan</option>
-                <option value="car">Car Loan</option>
-                <option value="business">Business Loan</option>
-                <option value="creditcard">Credit Card</option>
-            </select>
-            <div class="error-message text-red-600 text-sm mt-1 hidden"></div>
-        </div>
-
-        <div class="flex items-start space-x-2">
-            <input type="checkbox" id="consent" class="mt-1">
-            <label for="consent" class="text-sm text-black">
-                I agree to share my information with banks and authorize them to contact me for loan offers.
-                I have read and accept the terms & conditions.
-            </label>
-        </div>
-        <div class="error-message text-red-600 text-sm mt-1 hidden" id="consentError"></div>
-
-        <button type="submit" class="w-full bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-blue-700 transition-colors duration-200 flex items-center justify-center">
-            <span>Check Eligibility</span>
-            <i class="fas fa-arrow-right ml-2"></i>
-        </button>
-    </form>
+<!doctype html>
+<h2>How it works</h2>
+<div class="card-grid">
+<article class="card">
+<h3>Compare offers</h3>
+<p>We surface top offers for credit cards & loans based on eligibility and features.</p>
+</article>
+<article class="card">
+<h3>Check eligibility</h3>
+<p>Quick eligibility pointers — approximate CIBIL impact and documentation required.</p>
+</article>
+<article class="card">
+<h3>Apply or get help</h3>
+<p>Apply with the lender or request a callback from our agent for guidance.</p>
+</article>
 </div>
+</section>
 
-                    
-                    <!-- OTP Verification Form (Hidden initially) -->
-                    <div id="otpForm" class="space-y-6 hidden">
-                        <div class="text-center mb-4">
-                            <i class="fas fa-mobile-alt text-blue-600 text-4xl mb-2"></i>
-                            <h4 class="text-lg font-semibold text-black-900">OTP Verification</h4>
-                            <p class="text-sm text-gray-600">Enter the 6-digit code sent to your mobile</p>
-                        </div>
-                        
-                        <div class="flex justify-center space-x-2 mb-4">
-                            <input type="text" class="otp-input w-12 h-12 text-center text-xl font-bold border border-gray-300 rounded focus:ring-2 focus:ring-blue-500 focus:border-blue-500" maxlength="1">
-                            <input type="text" class="otp-input w-12 h-12 text-center text-xl font-bold border border-gray-300 rounded focus:ring-2 focus:ring-blue-500 focus:border-blue-500" maxlength="1">
-                            <input type="text" class="otp-input w-12 h-12 text-center text-xl font-bold border border-gray-300 rounded focus:ring-2 focus:ring-blue-500 focus:border-blue-500" maxlength="1">
-                            <input type="text" class="otp-input w-12 h-12 text-center text-xl font-bold border border-gray-300 rounded focus:ring-2 focus:ring-blue-500 focus:border-blue-500" maxlength="1">
-                            <input type="text" class="otp-input w-12 h-12 text-center text-xl font-bold border border-gray-300 rounded focus:ring-2 focus:ring-blue-500 focus:border-blue-500" maxlength="1">
-                            <input type="text" class="otp-input w-12 h-12 text-center text-xl font-bold border border-gray-300 rounded focus:ring-2 focus:ring-blue-500 focus:border-blue-500" maxlength="1">
-                        </div>
-                        
-                        <button id="resendOtp" class="w-full text-blue-600 font-medium hover:underline">
-                            Didn't receive OTP? Resend
-                        </button>
-                    </div>
-                    
-                    <div class="text-center mt-4 text-sm text-gray-500 space-y-2">
-                        <div>
-                            <i class="fas fa-shield-alt mr-1"></i>
-                            Your information is 100% secure and encrypted
-                        </div>
-                        <div class="flex justify-center items-center space-x-2">
-                            <span class="text-xs">Or chat directly:</span>
-                            <a href="https://wa.me/918595469797" target="_blank" class="text-green-600 font-medium hover:underline text-sm">
-                                <i class="fab fa-whatsapp mr-1"></i>
-                                WhatsApp: +91 859-546-9797
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Credit Score Display (Hidden initially) -->
-    <section id="creditScoreSection" class="bg-white py-12 hidden">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div id="creditScoreCard" class="rounded-2xl p-8 text-white text-center">
-                <div class="flex justify-center mb-4">
-                    <div class="relative">
-                        <div class="w-32 h-32 bg-white/20 rounded-full flex items-center justify-center">
-                            <div class="text-center">
-                                <div id="creditScoreValue" class="text-4xl font-bold">750</div>
-                                <div class="text-sm opacity-90">CREDIT SCORE</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <h3 id="creditScoreGrade" class="text-2xl font-bold mb-2">Excellent Credit Score!</h3>
-                <p class="opacity-90 mb-4" id="creditScoreMessage">
-                    You are eligible for premium loan offers from top banks
-                </p>
-                <div class="grid grid-cols-3 gap-4 max-w-md mx-auto">
-                    <div class="text-center">
-                        <div class="text-2xl font-bold">12+</div>
-                        <div class="text-sm opacity-90">Bank Offers</div>
-                    </div>
-                    <div class="text-center">
-                        <div class="text-2xl font-bold" id="minRate">8.5%</div>
-                        <div class="text-sm opacity-90">Min Rate</div>
-                    </div>
-                    <div class="text-center">
-                        <div class="text-2xl font-bold">₹50L</div>
-                        <div class="text-sm opacity-90">Max Amount</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<section id="products" class="container">
+<h2>Popular products</h2>
+<div class="product-list">
+<!-- Example product card: replicate or replace with server-side content later -->
+<div class="product">
+<img src="/assets/card-sample.jpg" alt="Credit Card sample" loading="lazy">
+<h4>Top Bank Credit Card</h4>
+<p>Rewards, best for shopping, 0% FX markup.</p>
+<div class="product-actions">
+<a class="btn small" href="/cibil-check.html">CIBIL Check / Calculator</a>
+<a class="btn small primary" href="#lead-form">Pay Now / Apply</a>
+<a class="btn small" href="https://wa.me/91WHATSAPP_NUMBER" target="_blank" rel="noopener">Share on WhatsApp</a>
+</div>
+</div>
+</div>
+</section>
 
-    <!-- Bank Comparison Section -->
-    <section class="py-16 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                    Compare Loan Offers from India's Top 10 Banks
-                </h2>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    Real-time interest rates and terms from leading banks. Updated every hour for accuracy.
-                </p>
-            </div>
 
-            <!-- LinkedIn Testimonial Section -->
-            <div class="mb-12 text-center">
-                <h3 class="text-2xl font-bold text-gray-900 mb-6">Bhawna's Professional Success</h3>
-                <div class="max-w-2xl mx-auto bg-white rounded-2xl shadow-lg overflow-hidden">
-                    <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7356740714161999874?collapsed=1" height="520" width="100%" frameborder="0" allowfullscreen="" title="Bhawna's LinkedIn Success Story"></iframe>
-                </div>
-                <div class="mt-6">
-                    <a href="https://wa.me/918595469797" target="_blank" class="inline-flex items-center bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-full font-semibold transition-colors text-lg shadow-lg">
-                        <i class="fab fa-whatsapp mr-3 text-xl"></i>
-                        Connect with Bhawna on WhatsApp
-                    </a>
-                </div>
-            </div>
+<section id="lead-form" class="container form-wrap">
+<h2>Request a Callback</h2>
+<form id="leadForm" class="lead-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+<input type="text" name="name" id="name" placeholder="Full name" required>
+<input type="tel" name="phone" id="phone" placeholder="Phone (10 digits)" pattern="[0-9]{10}" required>
+<input type="text" name="city" id="city" placeholder="City" required>
+<select name="need" id="need" required>
+<option value="">I need...</option>
+<option value="personal_loan">Personal Loan</option>
+<option value="credit_card">Credit Card</option>
+<option value="cc_loan_compare">Compare both</option>
+</select>
 
-            <!-- Bank Logos Grid -->
-            <div class="mb-12">
-                <div class="text-center mb-8">
-                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Trusted by India's Leading Banks</h3>
-                    <p class="text-gray-600">Official partnerships with RBI regulated financial institutions</p>
-                </div>
-                
-                <div class="grid grid-cols-5 md:grid-cols-10 gap-4 mb-8">
-                    <div class="bg-white p-3 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-                        <div class="bg-red-600 text-white p-2 rounded text-xs font-bold text-center">HDFC</div>
-                    </div>
-                    <div class="bg-white p-3 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-                        <div class="bg-orange-500 text-white p-2 rounded text-xs font-bold text-center">ICICI</div>
-                    </div>
-                    <div class="bg-white p-3 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-                        <div class="bg-blue-800 text-white p-2 rounded text-xs font-bold text-center">SBI</div>
-                    </div>
-                    <div class="bg-white p-3 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-                        <div class="bg-purple-600 text-white p-2 rounded text-xs font-bold text-center">AXIS</div>
-                    </div>
-                    <div class="bg-white p-3 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-                        <div class="bg-red-700 text-white p-2 rounded text-xs font-bold text-center">KOTAK</div>
-                    </div>
-                    <div class="bg-white p-3 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-                        <div class="bg-blue-600 text-white p-2 rounded text-xs font-bold text-center">YES</div>
-                    </div>
-                    <div class="bg-white p-3 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-                        <div class="bg-green-600 text-white p-2 rounded text-xs font-bold text-center">IDBI</div>
-                    </div>
-                    <div class="bg-white p-3 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-                        <div class="bg-indigo-600 text-white p-2 rounded text-xs font-bold text-center">UNION</div>
-                    </div>
-                    <div class="bg-white p-3 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-                        <div class="bg-orange-600 text-white p-2 rounded text-xs font-bold text-center">BOB</div>
-                    </div>
-                    <div class="bg-white p-3 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-                        <div class="bg-blue-700 text-white p-2 rounded text-xs font-bold text-center">PNB</div>
-                    </div>
-                </div>
-                
-                <div class="text-center">
-                    <div class="inline-block relative rounded-lg overflow-hidden shadow-lg">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
-                        <div class="absolute bottom-2 left-1/2 transform -translate-x-1/2 text-white text-sm font-medium bg-black/50 px-3 py-1 rounded-full">
-                            Official Bank Partners
-                        </div>
-                    </div>
-                </div>
-            </div>
 
-            <!-- Loan Type Filter -->
-            <div class="flex flex-wrap justify-center gap-2 mb-8">
-                <button class="loan-type-btn active bg-blue-600 text-white px-6 py-2 rounded-full font-medium transition-colors" data-type="personal">Personal Loan</button>
-                <button class="loan-type-btn bg-white text-gray-700 hover:bg-gray-50 px-6 py-2 rounded-full font-medium transition-colors border" data-type="home">Home Loan</button>
-                <button class="loan-type-btn bg-white text-gray-700 hover:bg-gray-50 px-6 py-2 rounded-full font-medium transition-colors border" data-type="car">Car Loan</button>
-                <button class="loan-type-btn bg-white text-gray-700 hover:bg-gray-50 px-6 py-2 rounded-full font-medium transition-colors border" data-type="business">Business Loan</button>
-            </div>
+<label class="consent"><input type="checkbox" name="consent" id="consent" required> I consent to be contacted about loan offers. I agree to the <a href="/privacy.html">privacy policy</a>.</label>
 
-            <!-- Comparison Table -->
-            <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
-                <div class="overflow-x-auto">
-                    <table class="w-full" id="bankOffersTable">
-                        <thead class="bg-gray-50">
-                            <tr>
-                                <th class="px-6 py-4 text-left text-sm font-semibold text-gray-900">Bank</th>
-                                <th class="px-6 py-4 text-left text-sm font-semibold text-gray-900">Interest Rate</th>
-                                <th class="px-6 py-4 text-left text-sm font-semibold text-gray-900">Processing Fee</th>
-                                <th class="px-6 py-4 text-left text-sm font-semibold text-gray-900">Max Amount</th>
-                                <th class="px-6 py-4 text-left text-sm font-semibold text-gray-900">Min CIBIL</th>
-                                <th class="px-6 py-4 text-left text-sm font-semibold text-gray-900">Action</th>
-                            </tr>
-                        </thead>
-                        <tbody id="bankOffersBody" class="divide-y divide-gray-200">
-                            <!-- Bank offers will be populated by JavaScript -->
-                        </tbody>
-                    </table>
-                </div>
 
-                <div class="bg-gray-50 px-6 py-4 text-center">
-                    <p class="text-sm text-gray-600">
-                        <i class="fas fa-clock mr-1"></i>
-                        Rates updated: <span id="lastUpdated" class="font-medium"></span> | 
-                        <i class="fas fa-shield-alt ml-3 mr-1"></i>
-                        RBI Approved Banks Only
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
+<input type="hidden" name="source" value="website">
+<button type="submit" class="btn primary">Request Callback</button>
+</form>
 
-    <!-- EMI Calculator -->
-    <section class="py-16 bg-white">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">EMI Calculator</h2>
-                <p class="text-xl text-gray-600">Calculate your monthly EMI for any loan amount</p>
-            </div>
-            
-            <div class="bg-gray-50 rounded-2xl p-8">
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                    <!-- Calculator Controls -->
-                    <div class="space-y-6">
-                        <div>
-                            <label class="block text-sm font-semibold text-gray-700 mb-3">
-                                Loan Amount: <span id="loanAmountDisplay">₹10,00,000</span>
-                            </label>
-                            <input type="range" id="loanAmountSlider" min="50000" max="5000000" step="50000" value="1000000" class="w-full mb-2">
-                            <input type="number" id="loanAmountInput" value="1000000" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
-                        </div>
-                        
-                        <div>
-                            <label class="block text-sm font-semibold text-gray-700 mb-3">
-                                Interest Rate: <span id="interestRateDisplay">12.0%</span> per annum
-                            </label>
-                            <input type="range" id="interestRateSlider" min="8" max="24" step="0.1" value="12.0" class="w-full mb-2">
-                            <input type="number" id="interestRateInput" value="12.0" step="0.1" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
-                        </div>
-                        
-                        <div>
-                            <label class="block text-sm font-semibold text-gray-700 mb-3">
-                                Loan Tenure: <span id="tenureDisplay">60 months (5.0 years)</span>
-                            </label>
-                            <input type="range" id="tenureSlider" min="12" max="360" step="12" value="60" class="w-full mb-2">
-                            <input type="number" id="tenureInput" value="60" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
-                        </div>
-                    </div>
-                    
-                    <!-- EMI Results -->
-                    <div class="bg-white rounded-lg shadow-lg p-6">
-                        <div class="text-center mb-6">
-                            <h3 class="text-lg font-semibold text-gray-900 mb-2">Your Monthly EMI</h3>
-                            <div id="monthlyEmi" class="text-4xl font-bold text-blue-600 mb-4">₹26,682</div>
-                        </div>
-                        
-                        <div class="space-y-4">
-                            <div class="flex justify-between items-center py-3 border-b border-gray-100">
-                                <span class="font-medium text-gray-700">Principal Amount</span>
-                                <span id="principalAmount" class="font-bold text-gray-900">₹10,00,000</span>
-                            </div>
-                            <div class="flex justify-between items-center py-3 border-b border-gray-100">
-                                <span class="font-medium text-gray-700">Total Interest</span>
-                                <span id="totalInterest" class="font-bold text-gray-900">₹6,00,920</span>
-                            </div>
-                            <div class="flex justify-between items-center py-3">
-                                <span class="font-medium text-gray-700">Total Amount</span>
-                                <span id="totalAmount" class="font-bold text-blue-600 text-lg">₹16,00,920</span>
-                            </div>
-                        </div>
-                        
-                        <button id="shareWhatsApp" class="w-full mt-6 bg-green-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-green-700 transition-colors duration-200 flex items-center justify-center">
-                            <i class="fab fa-whatsapp mr-2"></i>
-                            Share with Bhawna on WhatsApp
-                        </button>
-                        <div class="text-center mt-3">
-                            <p class="text-sm text-gray-600">Direct contact: <a href="https://wa.me/918595469797" class="text-green-600 font-medium">+91 859-546-9797</a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Features Section -->
-    <section class="py-16 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Why Choose Bhawna DSA?</h2>
-                <p class="text-xl text-gray-600">Your trusted partner for all banking needs</p>
-            </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <div class="bg-white rounded-2xl p-6 text-center shadow-lg hover:shadow-xl transition-shadow">
-                    <div class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                        <i class="fas fa-rocket text-2xl text-blue-600"></i>
-                    </div>
-                    <h3 class="text-lg font-semibold mb-2">Instant Approval</h3>
-                    <p class="text-gray-600 text-sm">Get loan approval in minutes with our digital process</p>
-                </div>
-                
-                <div class="bg-white rounded-2xl p-6 text-center shadow-lg hover:shadow-xl transition-shadow">
-                    <div class="w-16 h-16 bg-green-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                        <i class="fas fa-percentage text-2xl text-green-600"></i>
-                    </div>
-                    <h3 class="text-lg font-semibold mb-2">Best Rates</h3>
-                    <p class="text-gray-600 text-sm">Compare and get the lowest interest rates from top banks</p>
-                </div>
-                
-                <div class="bg-white rounded-2xl p-6 text-center shadow-lg hover:shadow-xl transition-shadow">
-                    <div class="w-16 h-16 bg-yellow-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                        <i class="fas fa-award text-2xl text-yellow-600"></i>
-                    </div>
-                    <h3 class="text-lg font-semibold mb-2">RBI Registered</h3>
-                    <p class="text-gray-600 text-sm">Authorized DSA partner with full regulatory compliance</p>
-                </div>
-                
-                <div class="bg-white rounded-2xl p-6 text-center shadow-lg hover:shadow-xl transition-shadow">
-                    <div class="w-16 h-16 bg-purple-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                        <i class="fas fa-headset text-2xl text-purple-600"></i>
-                    </div>
-                    <h3 class="text-lg font-semibold mb-2">24/7 Support</h3>
-                    <p class="text-gray-600 text-sm">Dedicated relationship manager for all your queries</p>
-                </div>
-            </div>
-        </div>
-    </section>
+<div id="formMessage" class="form-message" aria-live="polite" hidden></div>
+</section>
 
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-12">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-                <div>
-                    <div class="flex items-center space-x-3 mb-4">
-                        <div class="w-10 h-10 rounded-full overflow-hidden bg-gradient-to-br from-blue-600 to-blue-700 p-0.5 shadow-lg">
-                            <div class="w-full h-full rounded-full overflow-hidden bg-white">
-                                <img src="assets/bhawna-portrait.jpg" alt="Bhawna - DSA Partner" class="w-full h-full object-cover object-center profile-image">
-                            </div>
-                        </div>
-                        <div>
-                            <h3 class="text-lg font-bold text-white">Bhawna DSA</h3>
-                            <p class="text-sm text-gray-300">Credit & Loans Partner</p>
-                        </div>
-                    </div>
-                    <p class="text-gray-400 text-sm mb-4">
-                        RBI registered DSA partner helping customers get the best loan deals from India's top banks.
-                    </p>
-                </div>
-                
-                <div>
-                    <h4 class="font-semibold mb-4">Loan Products</h4>
-                    <ul class="space-y-2 text-sm text-gray-400">
-                        <li><a href="#" class="hover:text-white">Personal Loans</a></li>
-                        <li><a href="#" class="hover:text-white">Home Loans</a></li>
-                        <li><a href="#" class="hover:text-white">Car Loans</a></li>
-                        <li><a href="#" class="hover:text-white">Business Loans</a></li>
-                        <li><a href="#" class="hover:text-white">Credit Cards</a></li>
-                    </ul>
-                </div>
-                
-                <div>
-                    <h4 class="font-semibold mb-4">Resources</h4>
-                    <ul class="space-y-2 text-sm text-gray-400">
-                        <li><a href="#" class="hover:text-white">EMI Calculator</a></li>
-                        <li><a href="#" class="hover:text-white">Eligibility Check</a></li>
-                        <li><a href="#" class="hover:text-white">Interest Rates</a></li>
-                        <li><a href="#" class="hover:text-white">Compare Banks</a></li>
-                        <li><a href="#" class="hover:text-white">Credit Score</a></li>
-                    </ul>
-                </div>
-                
-                <div>
-                    <h4 class="font-semibold mb-4">Direct Contact</h4>
-                    <div class="space-y-2 text-sm text-gray-400">
-                        <div class="flex items-center">
-                            <i class="fab fa-whatsapp mr-2"></i>
-                            <a href="https://wa.me/918595469797" target="_blank" class="text-green-400 hover:text-green-300">+91 859-546-9797</a>
-                        </div>
-                        <div class="flex items-center">
-                            <i class="fas fa-shield-alt mr-2"></i>
-                            <span>RBI Registration: DSA-001234</span>
-                        </div>
-                        <div class="mt-4">
-                            <a href="https://wa.me/918595469797" target="_blank" class="inline-flex items-center bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg font-medium transition-colors">
-                                <i class="fab fa-whatsapp mr-2"></i>
-                                Quick Chat
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-sm text-gray-400">
-                <p>&copy; 2024 Bhawna Credit Card & Loans DSA Partner. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
 
-    <!-- Floating WhatsApp Button -->
-    <div class="fixed bottom-6 right-6 z-50">
-        <a href="https://wa.me/918595469797" target="_blank" class="bg-green-600 hover:bg-green-700 text-white rounded-full p-4 shadow-2xl hover:shadow-3xl transition-all duration-300 flex items-center justify-center group hover:scale-110 whatsapp-float">
-            <i class="fab fa-whatsapp text-2xl"></i>
-            <span class="ml-2 font-medium hidden group-hover:inline-block animate-pulse">Chat with Bhawna</span>
-        </a>
-    </div>
+</main>
 
-    <!-- Toast Notification -->
-    <div id="toast" class="fixed top-4 right-4 bg-green-600 text-white px-6 py-3 rounded-lg shadow-lg transform translate-x-full transition-transform duration-300 z-40">
-        <div class="flex items-center">
-            <i class="fas fa-check-circle mr-2"></i>
-            <span id="toastMessage">Success!</span>
-        </div>
-    </div>
 
-    <script src="script.js"></script>
+<footer class="site-footer">
+<div class="container">
+<div>© <span id="year"></span> Smart Loan Advisor India</div>
+<div class="footer-links">
+<a href="/privacy.html">Privacy</a>
+<a href="/disclaimer.html">Disclaimer</a>
+<a href="/sitemap.xml">Sitemap</a>
+</div>
+</div>
+</footer>
+
+
+<!-- Sticky WhatsApp button -->
+<a class="whatsapp-float" href="https://wa.me/91WHATSAPP_NUMBER?text=Hi%20I%20need%20help%20with%20loans" target="_blank" rel="noopener">
+<img src="/assets/whatsapp-icon.svg" alt="WhatsApp" loading="lazy"> Chat with us
+</a>
+
+
+<script src="/script.js" defer></script>
 </body>
 </html>
