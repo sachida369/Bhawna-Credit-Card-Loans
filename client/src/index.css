@@ -140,3 +140,13 @@
     background-color: var(--alert-red);
   }
 }
+
+/* Input field styling for consistency */
+.input-field {
+  @apply w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-black;
+}
+
+/* Primary button */
+.btn-primary {
+  @apply bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-blue-700 transition-colors duration-200;
+}
